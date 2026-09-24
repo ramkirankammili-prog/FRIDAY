@@ -10,7 +10,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const ws = new WebSocket("ws://127.0.0.1:8000/ws");
+    const ws = new WebSocket("wss://friday-jnbd.onrender.com/ws");
 
     ws.onopen = () => setConnected(true);
     ws.onclose = () => setConnected(false);
